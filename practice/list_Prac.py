@@ -112,10 +112,11 @@ print(st)
 
 def birth_only(str):
     ret=str.split('-')
-    print(ret[0])
+    return (ret[0])
+    #print(ret[0])
 
 
 str="070609-2011xxx"
 birth_only(str)
 
-print(birth_only("070609-2011xxx")) => 끝에 none 나오는것 어떻게 없애는지?
+print(birth_only("070609-2011xxx")) #=> 끝에 none 나오는것 어떻게 없애는지? 리턴값 줘서 해결!
