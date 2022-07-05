@@ -1,34 +1,18 @@
-# from ast import arg
+# %%
+def adder(n1, n2):
+    r=n1+n2
+    return r
 
+print(adder(3,4))
 
-# def add_many(*args):
-#     result = 0
-#     for i in args:
-#         result += i
-#     print(result)
-    
-# add_many(1,10,20)
-# add_many(1,10)
+# %%
+for i in(1,3,5,7,9):
+    print(i, end=' ')
 
+# %%
+def whoAreYou(name, age):
+    print("이름: ", name)
+    print("나이: ", age)
 
-
-
-from unittest import result
-
-
-def add_mul(choice, *args):
-    if choice == "add": #매개변수 choice에 'add'를 입력 받을때
-        result = 0
-        for i in args:
-            result += i
-    elif choice == "mul": #매개변수 choice에 'mul'을 입력 받을때
-        result = 1
-        for i in args:
-            result *= i
-            
-    return result
-
-result = add_mul('add', 1,2,3,4,5)
-print(result)
-result = add_mul('mul', 1,2,3,4,5)
-print(result)
+whoAreYou(age=20, name="홍길동")
+#매개변수에 직접 값을 넣어주면, 매개변수 순서에 상관없이 함수값 그대로 출력 된다
