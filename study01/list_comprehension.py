@@ -48,6 +48,28 @@ print(s3)
 # %% 구구단
 gugu = [i * j for i in range(2,10) for j in range(1,10)]
 gugugu = [i * j for i in range(2,10) for j in range(1,10) if (i * j)%2]
-print(gugu)
-print(gugugu)
+print(gugu) #구구단 출력하기
+print(gugugu) #홀수 값만 출력하기
 
+# %% 빈 리스트 r1을 만들고 리스트에 내용을 1~10까지 채워라 
+# 그 리스트에 저장된 내용을 2배씩 증가시켜 r2 리스트에 담기
+# 메인함수에 담아서 실행하는 형태로 작성하기
+
+def main():
+    r1=[]
+    r1 = [x for x in range(1,11)]
+    r2 = [x * 2 for x in r1]
+    print(r1)
+    print(r2)
+
+main()
+
+# %% 위의 문제에서 r1의 홀수만 출력하기
+
+def main():
+    r1=[]
+    r1 = [x for x in range(1,11)]
+    r1 =[x for x in r1 if x % 2]
+    print(r1)
+
+main()
